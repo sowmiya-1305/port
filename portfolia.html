@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sowmiya R | Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #d3ebeff5, #0e0e0e);
+            color: rgb(6, 6, 6);
+            font-family: 'Poppins', sans-serif;
+        }
+        .container {
+            background: #c8d3d7;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .hero-img, .about-img {
+            width: 150px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+            border-radius: 10px;
+        }
+        /* Further Reduced Navigation Bar Style */
+        header {
+            padding: 8px 15px;
+            background: rgba(0, 0, 0, 0.7);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            font-size: 20px;
+            margin: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ff7eb3;
+        }
+        /* Reduced hero section */
+        .hero {
+            text-align: center;
+            margin: 50px 0;
+        }
+        .hero h2 {
+            font-size: 24px;
+        }
+        .hero p {
+            font-size: 14px;
+        }
+        .project {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+        .project h3 {
+            color: #ff7eb3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <h1>Sowmiya R</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <img src="https://img.freepik.com/premium-vector/school-girl-with-books-vector-illustration-schoolgirl-glasses_1142-82179.jpg" alt="Portfolio Hero Image" class="hero-img">
+        <h2>Welcome to My Portfolio</h2>
+        <p style="color: white;">Exploring the world of Electronics, Communication, and Cybersecurity</p>
+    </div>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="https://img.freepik.com/premium-photo/close-up-cartoon-girl-with-smile-circle-generative-ai_1034033-23.jpg" alt="About Me Image" class="about-img">
+            <p>I am a 2nd-year Electronics and Communication Engineering student at Sri Krishna College of Engineering and Technology. Passionate about cybersecurity, embedded systems, and AI in electronics. I'm driven by a curiosity to understand the intersection of hardware and software and how they can be optimized for real-world applications. I aim to build innovative solutions that leverage cutting-edge technology to make a positive impact in fields like IoT and AI.</p>
+            <p>Outside of academics, I enjoy problem-solving challenges, participating in hackathons, and staying updated with the latest trends in technology. I believe in continuous learning and am always looking for opportunities to enhance my knowledge and skills.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Programming: C, Java, Python (Basic)</li>
+                <li>Cybersecurity Fundamentals (Network Security, Cryptography, Threat Mitigation)</li>
+                <li>Embedded Systems (Arduino, Raspberry Pi)</li>
+                <li>Networking Basics (TCP/IP, Subnetting, Routing)</li>
+                <li>Machine Learning (Basic concepts and algorithms)</li>
+                <li>Web Development (HTML, CSS, JavaScript - Basic)</li>
+                <li>Version Control (Git, GitHub)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2>Certifications</h2>
+            <ul>
+                <li>NPTEL Ethics in Engineering (Silver Elite)</li>
+                <li>Arduino Training - 100% Score (IIT Bombay)</li>
+                <li>Cisco Networking Academy - Cyber Security</li>
+                <li>Java Milestone Program - I am Neo</li>
+                <li>ChatGPT for HR - Certified</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Smart Home Automation System</h3>
+                <p>This project involves creating a home automation system using Arduino and IoT. It allows users to control household devices like lights, fans, and security systems remotely using a mobile app.</p>
+            </div>
+            <div class="project">
+                <h3>Cybersecurity Awareness Program</h3>
+                <p>As part of my initiative to promote cybersecurity awareness, I developed a small web application that educates users about common cyber threats and how to mitigate them, such as phishing and malware attacks.</p>
+            </div>
+            <div class="project">
+                <h3>Embedded System for Smart Agriculture</h3>
+                <p>This project focuses on using embedded systems for real-time monitoring and automation in agricultural processes, such as controlling irrigation systems based on soil moisture levels, and monitoring temperature and humidity.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="727723euec191@skcet.ac.in">727723euec191@skcet.ac.in</a></p>
+            <p>Contact: <a href="#">9340068155</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Sowmiya R | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        ScrollReveal().reveal('.section', { duration: 1000, origin: 'bottom', distance: '50px' });
+        ScrollReveal().reveal('h1, h2, p, ul', { duration: 1000, delay: 300, origin: 'left', distance: '30px' });
+    </script>
+
+</body>
+</html>
